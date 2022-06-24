@@ -12,5 +12,17 @@
     text-align: center;
 }
 
+.todo-wrapper{
+    margin: auto 250px auto 250px;
+    min-height: 100vh;
+    border: 5px solid white;
+    padding: 30px;
+}
 
+.title-list{
+    margin-top: 70px;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
 /* -------------------------------------------------------------*/

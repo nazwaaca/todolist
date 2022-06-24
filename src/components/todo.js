@@ -1,23 +1,33 @@
-import React from "react";
-import './todo.css'
+import React from 'react';
+import './todo.css';
 
-class Todo extends React.Component{
-    // constructor(props){
-    //     super(props);
-    //     this.state({
-            
-    //     });
-    // }
+export default class TodoInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: this.props.todoText};
 
-    render(){
-        return(
-        <div className='todo'>
-            <div className='todo-input'>
-                <input type='text' className='input-type' placeholder= "Masukkan Text" />
-                <button type='submit' className="Add-input">Add</button>
-            </div>
-          </div>
-        );
+    this.handleChange = this.handleChange.bind(this);
+    this.addTodo = this.addTodo.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({value: e.target.value});
+  }
+
+  addTodo(todo) {
+    // Ensure a todo was actually entered before submitting
+    if (todo.length > 0) {
+      this.props.addTodo(todo);
+      this.setState({value: ''});
     }
+  }
+
+  render() {
+    return (
+      <div className='todo'>
+        <input type="text" value={this.state.value} onChange={this.handleChange} />
+        <button className="btn btn-primary" onClick={() => this.addTodo(this.state.value)}>Submit</button>
+      </div>
+    );
+  }
 }
-export default Todo;
