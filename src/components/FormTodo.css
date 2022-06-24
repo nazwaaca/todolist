@@ -1,0 +1,8 @@
+.todo{
+    margin: auto 100px auto 100px;
+    widht: 100px;
+    min-height: 100vh;
+    border: 5px solid white;
+    padding: 30px;
+    color: white;
+}

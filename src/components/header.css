@@ -1,0 +1,22 @@
+.App-header{
+    height: 75px;
+    weight: 100%;
+    background-color: black;
+}
+
+.navbar-header{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.navbar-name{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition : 0.5s;
+}
+
+.navbar-name:hover {
+    color: grey;
+
+}
