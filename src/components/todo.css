@@ -43,3 +43,12 @@
     background: white;
     color: black;
   }
+
+  @media screen and (max-width:980px){
+    input{
+      width: 80%;
+    }
+    .btn{
+      margin-top: 50px;
+    }
+  }

@@ -14,7 +14,6 @@
 
 .todo-wrapper{
     margin: auto 250px auto 250px;
-    min-height: 100vh;
     border: 5px solid white;
     padding: 30px;
 }
@@ -26,3 +25,19 @@
     text-decoration: underline;
 }
 /* -------------------------------------------------------------*/
+
+@media screen and (max-width:1000px){
+    .todo-wrapper{
+        margin: auto 100px auto 100px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .todo-wrapper{
+        margin: auto;
+        border: 2px solid white;
+    }
+    .title-list{
+        font-size: 10px;
+    }
+}
